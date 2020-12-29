@@ -6,7 +6,7 @@ import styles from './InputSpirit.module.css'
 
 
 
-const Menu = ({strDrink, strDrinkThumb}) => {
+const CubeView = ({strDrink, strDrinkThumb}) => {
     
     const mystyle = {
         position: "absolute",
@@ -33,7 +33,6 @@ const Menu = ({strDrink, strDrinkThumb}) => {
                     <img src={strDrinkThumb} className= {styles.drinkpic} />
                 </div>
                 <div className={styles.left} style={mystyle}>
-                    1
                     <img src={strDrinkThumb} className= {styles.drinkpic}/>
                 </div>
                 <div className= {styles.top} style={mystyle}>
@@ -51,4 +50,4 @@ const Menu = ({strDrink, strDrinkThumb}) => {
     
 }
 
-export default Menu
+export default CubeView

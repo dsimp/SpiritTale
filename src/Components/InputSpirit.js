@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import useFetch from './services/useFetch.js'
-import Menu from './Menu.js'
+import SwitchView from './SwitchView.js'
 import {Link} from 'react-router-dom'
 import './InputSpirit.module.css'
 
@@ -38,7 +38,7 @@ const InputSpirit = () => {
     </form>
     <div style={centerstyle}>
       
-      {liq.map(dwinks => <Link to={`detail/${dwinks.idDrink}`} key={dwinks.idDrink}><Menu {...dwinks} key={dwinks.idDrink} id={dwinks.idDrink} >{dwinks.strDrink}</Menu></Link>)}
+      {liq.map(dwinks => <Link to={`detail/${dwinks.idDrink}`} key={dwinks.idDrink}><SwitchView {...dwinks} key={dwinks.idDrink} id={dwinks.idDrink} >{dwinks.strDrink}</SwitchView></Link>)}
     
     </div>
 
